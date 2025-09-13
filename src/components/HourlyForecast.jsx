@@ -7,7 +7,7 @@ function HourlyForecast({ forecast }) {
       <h3 className="text-lg font-semibold mb-2 dark:text-white self-start px-4">
         Next 24 Hours
       </h3>
-      <div className="flex gap-3 overflow-x-auto pb-4 w-full px-4 scrollbar-thin">
+      <div className="flex gap-3 overflow-x-auto pb-4 w-full px-4 hide-scrollbar">
         {forecast.slice(0, 24).map((f, i) => (
           <motion.div
             key={i}
@@ -29,3 +29,4 @@ function HourlyForecast({ forecast }) {
 }
 
 export default HourlyForecast;
+
